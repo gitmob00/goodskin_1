@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navi"
+    app:startDestination="@id/na1">
+
+    <fragment
+        android:id="@+id/na1"
+        android:name="com.example.final_1.navi.na1"
+        android:label="fragment_na1"
+        tools:layout="@layout/fragment_na1" >
+        <action
+            android:id="@+id/action_na1_to_na2"
+            app:destination="@id/na2" />
+        <action
+            android:id="@+id/action_na1_to_na3"
+            app:destination="@id/na3" />
+        <action
+            android:id="@+id/action_na1_to_na4"
+            app:destination="@id/na4" />
+        <action
+            android:id="@+id/action_na1_to_na5"
+            app:destination="@id/na5" />
+    </fragment>
+    <fragment
+        android:id="@+id/na2"
+        android:name="com.example.final_1.navi.na2"
+        android:label="fragment_na2"
+        tools:layout="@layout/fragment_na2" >
+        <action
+            android:id="@+id/action_na2_to_na1"
+            app:destination="@id/na1" />
+        <action
+            android:id="@+id/action_na2_to_na3"
+            app:destination="@id/na3" />
+        <action
+            android:id="@+id/action_na2_to_na4"
+            app:destination="@id/na4" />
+        <action
+            android:id="@+id/action_na2_to_na5"
+            app:destination="@id/na5" />
+    </fragment>
+    <fragment
+        android:id="@+id/na3"
+        android:name="com.example.final_1.navi.na3"
+        android:label="fragment_na3"
+        tools:layout="@layout/fragment_na3" >
+        <action
+            android:id="@+id/action_na3_to_na1"
+            app:destination="@id/na1" />
+        <action
+            android:id="@+id/action_na3_to_na2"
+            app:destination="@id/na2" />
+        <action
+            android:id="@+id/action_na3_to_na4"
+            app:destination="@id/na4" />
+        <action
+            android:id="@+id/action_na3_to_na5"
+            app:destination="@id/na5" />
+    </fragment>
+    <fragment
+        android:id="@+id/na4"
+        android:name="com.example.final_1.navi.na4"
+        android:label="fragment_na4"
+        tools:layout="@layout/fragment_na4" >
+        <action
+            android:id="@+id/action_na4_to_na1"
+            app:destination="@id/na1" />
+        <action
+            android:id="@+id/action_na4_to_na2"
+            app:destination="@id/na2" />
+        <action
+            android:id="@+id/action_na4_to_na3"
+            app:destination="@id/na3" />
+        <action
+            android:id="@+id/action_na4_to_na5"
+            app:destination="@id/na5" />
+    </fragment>
+    <fragment
+        android:id="@+id/na5"
+        android:name="com.example.final_1.navi.na5"
+        android:label="fragment_na5"
+        tools:layout="@layout/fragment_na5" >
+        <action
+            android:id="@+id/action_na5_to_na1"
+            app:destination="@id/na1" />
+        <action
+            android:id="@+id/action_na5_to_na2"
+            app:destination="@id/na2" />
+        <action
+            android:id="@+id/action_na5_to_na3"
+            app:destination="@id/na3" />
+        <action
+            android:id="@+id/action_na5_to_na4"
+            app:destination="@id/na4" />
+    </fragment>
+</navigation>

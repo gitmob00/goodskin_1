@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ivory"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                <TextView
+                    android:text="글쓰기 페이지"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/gray"/>
+
+            <EditText
+                android:id="@+id/title"
+                android:hint="제목을 입력해주세요."
+                android:layout_margin="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="1"
+                android:padding="8dp"
+                android:background="@android:color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/gray"/>
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+            <EditText
+                android:id="@+id/content"
+                android:hint="내용을 입력해주세요."
+                android:layout_margin="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="top"
+                android:padding="8dp"
+                android:background="@android:color/transparent"/>
+<!--            </LinearLayout>-->
+
+<!--        </ScrollView>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/gray"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/baseline_add_circle_outline_24"
+                android:layout_width="230dp"
+                android:layout_height="170dp"
+                android:layout_margin="30dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/writebtn"
+                android:layout_marginTop="20dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/skyblue"
+                android:text="입력"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".contentsList.TipsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/skyblue">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_invert_colors_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                app:tint="@color/black">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOOD SKIN"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="9dp"/>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="120dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp"
+                android:orientation="vertical">
+
+    <!--            첫 번째 줄-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/ca1"
+                        android:src="@drawable/baseline_add_circle_outline_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/ca2"
+                        android:src="@drawable/baseline_playlist_add_circle_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/ca3"
+                        android:src="@drawable/baseline_edit_note_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+                <!--            2 번째 줄-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/ca4"
+                        android:src="@drawable/baseline_add_circle_outline_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/ca5"
+                        android:src="@drawable/baseline_playlist_add_circle_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/ca6"
+                        android:src="@drawable/baseline_edit_note_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+                <!--            3 번째 줄-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/ca7"
+                        android:src="@drawable/baseline_add_circle_outline_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/ca8"
+                        android:src="@drawable/baseline_playlist_add_circle_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/ca9"
+                        android:src="@drawable/baseline_edit_note_24"
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/skyblue"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <!--캘린더-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/navi1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/baseline_calendar_month_24"
+                        app:tint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="달력"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--물-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/navi2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/baseline_invert_colors_24_b"
+                        app:tint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="상태"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--채팅-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/navi3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/baseline_chat_24"
+                        app:tint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="게시판"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--그래프-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/navi4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/baseline_equalizer_24"
+                        app:tint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="기록"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--설정-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/navi5"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/baseline_settings_24"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="설정"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>
